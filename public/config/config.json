@@ -1,0 +1,18 @@
+{
+  "CONTRACT_ADDRESS": "0x2953399124F0cBB46d2CbACD8A89cF0599974963",
+  "SCAN_LINK": "https://polygonscan.com/token/0x827acb09a2dc20e39c9aad7f7190d9bc5353419",
+  "NETWORK": {
+    "NAME": "Polygon",
+    "SYMBOL": "Matic",
+    "ID": 137
+  },
+  "NFT_NAME": "Alien Cats",
+  "SYMBOL": "AC",
+  "MAX_SUPPLY": 100,
+  "WEI_COST": 75000000000000000,
+  "DISPLAY_COST": 0.075,
+  "GAS_LIMIT": 285000,
+  "MARKETPLACE": "Opeansea",
+  "MARKETPLACE_LINK": "https://opensea.io/fr/collection/aliencatsss",
+  "SHOW_BACKGROUND": true
+}
