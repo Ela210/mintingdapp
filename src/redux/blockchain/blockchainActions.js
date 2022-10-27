@@ -49,7 +49,8 @@ export const connect = () => {
     });
     const CONFIG = await configResponse.json();
     const { ethereum } = window;
-    const metamaskIsInstalled = ethereum && ethereum.isMetaMask;
+    const metamaskIsInstalled = ethereum;
+    console.log("Is MetaMask", metamaskIsInstalled);
     if (metamaskIsInstalled) {
       Web3EthContract.setProvider(ethereum);
       let web3 = new Web3(ethereum);
@@ -84,6 +85,7 @@ export const connect = () => {
           dispatch(connectFailed(`Change network to ${CONFIG.NETWORK.NAME}.`));
         }
       } catch (err) {
+        console.log("Err",err)
         dispatch(connectFailed("Something went wrong."));
       }
     } else {
